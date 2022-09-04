@@ -1,4 +1,4 @@
-W folderze '01-basics' w tym repozytirium stwórzcie folder przeznaczony na kod Waszej grupy o nazwie 'teamX' gdzie X będzie numerem grupy. Pracujemy na branczu 'teamX-basics" stworzonym z gałęzi głównej (podobnie jak wyżej - X to numer grupy).
+W folderze '01-basics' w tym repozytirium stwórzcie folder przeznaczony na kod Waszej grupy o nazwie 'team-X' gdzie X będzie numerem grupy. Pracujemy na branczu '01-basics/team-X" stworzonym z gałęzi głównej (podobnie jak wyżej - X to numer grupy).
 
 W tym projekcie przygotujemy dziennik elektroniczny klasy 3A. Stworzymy przy pomocy JSa szablon aplikacji, która będzie służyła do zarządzania całą klasą. Zadanie jest podzielone na kilka etapów i każdy etap powinien zawierać w sobie fragment kodu odpowiedzialny za jego realizację.
 Do tworzenia zmiennych wykorzystujemy 'const', chyba, że w konkretnym etapie wskazano inaczej.
