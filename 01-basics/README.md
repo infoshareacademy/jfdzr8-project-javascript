@@ -7,7 +7,7 @@ Do tworzenia zmiennych wykorzystujemy 'const', chyba, że w konkretnym etapie ws
 
 ---
 
-1. Stwórz pusty obiekt reprezentujący klasę, nazwijmy go '3A'.
+1. Stwórz pusty obiekt reprezentujący klasę, nazwijmy go 'classData'
 
 #### <<< tutaj kod >>>
 
@@ -27,7 +27,7 @@ Konkretne wartości ustalcie między sobą w zespole.
 
 ---
 
-3. Dodaj do obiektu klasy 3A nową właściwość, niech to będzie 'teacher' i jego wartością będzie obiekt stworzony w kroku 2 ('teacher').
+3. Dodaj do obiektu klasy 'classData' nową właściwość, niech to będzie 'teacher' i jego wartością będzie obiekt stworzony w kroku 2 ('teacher').
 
 #### <<< tutaj kod >>>
 
@@ -57,13 +57,13 @@ Konkretne wartości ustalcie między soba w zespole.
 
 ---
 
-6. Do obiektu '3A' w którym już znajduje się nauczyciel dodajemy nową właściwość - students - będzie ona zawierała tablicę stworzoną w kroku 5.
+6. Do obiektu 'classData' w którym już znajduje się nauczyciel dodajemy nową właściwość - students - będzie ona zawierała tablicę stworzoną w kroku 5.
 
 #### <<< tutaj kod >>>
 
 ---
 
-7. Korzystająć z funkcji console.table() wyświetl w konsoli aktualny skład klasy (czyli tablicę 'student' znajdującą się w obiekcie '3A'). Nie przejmujcie się, jeśli console.table() jest czymś nowym - spróbujcie w grupie za pomocą tych przykładów (https://www.w3schools.com/jsref/met_console_table.asp) dojść do tego, jak powinno się z tej funkcji korzystać. Na potwierdzenie wykonania tej operacji dorzućcie proszę screen do folderu z zadaniem :)
+7. Korzystająć z funkcji console.table() wyświetl w konsoli aktualny skład klasy (czyli tablicę 'student' znajdującą się w obiekcie 'classData'). Nie przejmujcie się, jeśli console.table() jest czymś nowym - spróbujcie w grupie za pomocą tych przykładów (https://www.w3schools.com/jsref/met_console_table.asp) dojść do tego, jak powinno się z tej funkcji korzystać. Na potwierdzenie wykonania tej operacji dorzućcie proszę screen do folderu z zadaniem :)
 
 #### <<< tutaj kod >>>
 
