@@ -92,8 +92,6 @@ greetingsKonkat(0)
 
 // ex. 5
 
-
-
 // function findLeader (id) {
 //     console.log( team2[id]?.name)
 // }
@@ -101,3 +99,27 @@ greetingsKonkat(0)
 // findLeader(0)
 //     team2.find(findLeader).["isGroupLeader"]: true
 
+// ex. 6
+
+
+
+
+
+
+
+
+function checkWidth (person, callBack) {
+    let result = person.width > 175 ? true : false
+    callBack(result)
+}
+
+function text (checkResult) {
+    if (checkResult == true) {
+        console.log("Jest wyższy/a niż 175 cm.")
+    } else {
+        console.log(`Nie jest i tyle`)
+    }
+}
+
+
+checkWidth(adamMałysz, text)
