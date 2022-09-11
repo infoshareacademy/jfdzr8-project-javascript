@@ -8,6 +8,7 @@ let edekKredek = {
   name: "Edek",
   surname: "Kredek",
   age: 18,
+  height: 180,
   address: { street: "Polna", postCode: "00-500", city: "Kraków" },
   hobby: ["piłka nozna", "koszykówka", "pierogi"],
   animalOwner: true,
@@ -17,6 +18,7 @@ let KubuśPuchatek = {
   name: "Kubuś",
   surname: "Puchatek",
   age: 13,
+  height: 160,
   address: { street: "StumilowyLas", postCode: "05-980", city: "Marzeniowo" },
   hobby: ["planszówki", "terkking", "malarstwo"],
   animalOwner: true,
@@ -26,6 +28,7 @@ let Prosiaczek = {
   name: "Prosiaczek",
   surname: "Prosiaczkowy",
   age: 7,
+  height: 120,
   address: { street: "Leśna", postCode: "03-988", city: "Stumilowo" },
   hobby: ["spacery", "taniec", "opera"],
   animalOwner: false,
@@ -60,12 +63,26 @@ console.log(presentation1(KubuśPuchatek));
 
 function GroupLeader(name) {
   let TeamLeader = team1.find(function (currentValue) {
-   return currentValue.name === name;
+    return currentValue.name === name;
   });
   TeamLeader.isGroupLeader = true;
 }
 
-GroupLeader("Edek")
+GroupLeader("Edek");
 
-console.log(team1)
-console.table(team1)
+console.log(team1);
+console.table(team1);
+
+function howTall(object) {
+  const heightbool = object.height > 175 ? true : false;
+}
+
+function heightInfo(heightbool) {
+  if (heightbool === true) {
+    return "jest wyższy niż 175 cm";
+  } else {
+    return "nie jest wyższy niż 175 cm";
+  }
+}
+
+console.log(heightInfo(howTall(edekKredek)));
