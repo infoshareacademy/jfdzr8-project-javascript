@@ -94,5 +94,15 @@ function liderFound(name) {
 liderFound("Wiktor");
 console.log(wiktorSobczak)
 
+function func1(obj, func) {
+    let isHeight = (obj.height > 175 ? true : false)
+    return func(isHeight, obj)
+}
+function printInfo(isHeight, obj) {
+    if (isHeight) return obj.name + " jest wyższy niż 175cm"
+    return obj.name + " jest niższy niż 175cm"
+}
+
+console.log(func1(wiktorSobczak, printInfo))
 
 
