@@ -32,7 +32,7 @@ let katarzynaSkibowska = {
 	age: 28,
 	name: "Katarzyna",
 	lastName: "Skibowska",
-	height: 168,
+	height: 175,
 	address: {
 		street: "Opolska",
 		postCode: "05-270",
@@ -88,21 +88,43 @@ function welcome2(obj) {
 // console.log(welcome2(adamPawlowski));
 
 function liderFound(name) {
-    let master = team3.find(function (person) { return person.name === name });
-    master.isGroupLeader = true    
+	let master = team3.find(function (person) {
+		return person.name === name;
+	});
+	master.isGroupLeader = true;
 }
 liderFound("Wiktor");
-console.log(wiktorSobczak)
+console.log(wiktorSobczak);
 
 function func1(obj, func) {
-    let isHeight = (obj.height > 175 ? true : false)
-    return func(isHeight, obj)
+	let isHeight = obj.height > 175 ? true : false;
+	return func(isHeight, obj);
 }
 function printInfo(isHeight, obj) {
-    if (isHeight) return obj.name + " jest wyższy niż 175cm"
-    return obj.name + " jest niższy niż 175cm"
+	if (isHeight) return obj.name + " jest wyższy niż 175cm";
+	return obj.name + " jest niższy niż 175cm";
 }
 
-console.log(func1(wiktorSobczak, printInfo))
+console.log(func1(wiktorSobczak, printInfo));
 
+function walk() {
+	console.log("Idę na spacer");
+}
 
+wiktorSobczak.walk = walk;
+krzysztofSosnowski.walk = walk;
+katarzynaSkibowska.walk = walk;
+adamPawlowski.walk = walk;
+
+wiktorSobczak.walk();
+
+function func2(obj) {
+	if (obj.height >= 170 && obj.height <= 180 && obj.isAnimalOwner === false)
+		return true;
+	return false;
+}
+
+console.log(func2(wiktorSobczak))
+console.log(func2(krzysztofSosnowski))
+console.log(func2(katarzynaSkibowska))
+console.log(func2(adamPawlowski))
