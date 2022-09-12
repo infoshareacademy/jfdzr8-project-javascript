@@ -42,6 +42,8 @@ function getUserHeightInfo(user, displayHeightInfoCallback) {
 // 'edek' to po prostu obiekt utworzony na początku a 'displayHeightInfo' to funkcja, którą też zdefiniowaliśmy wcześniej
 // dane przekazane przy wywoływaniu funkcji MUSZA odpowiadać realnym zmiennym/obiektom/funkcjom itd...
 getUserHeightInfo(edek, displayHeightInfo);
+// pierwszym Argumentem jest edek - konkretny obiekt, drugim jest funkcja zwrotna (callback) czyli displayHeightInfo
+// kolejność argumentów ma znaczenie - musi być taka sama jak kolejność parametrów określonych w definicji funkcji - jeśli spodziewamy się, że pierwszy parametr będzie obiektem to zarówno argument musi być obiektem jak i parametr w funkcji, do której ten argument przekazaliśym.
 
 // Zapamiętaj:
 // 1. Parametry określamy podczas definiowania funkcji i są one reprezentacją tego, co umieścimy w tej funkcji w momencie jej wywołania.
@@ -56,4 +58,4 @@ function Blabla(a) {
 
 const b = 1;
 
-Blabla(b); // Wywołujemy funkcję podając jej ARGUMENT - konkretną wartość
+Blabla(b); // Wywołujemy funkcję podając jej ARGUMENT - konkretną wartość, która funkcja wykorzysta do swojej pracy
