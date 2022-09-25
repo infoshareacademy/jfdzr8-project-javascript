@@ -39,3 +39,27 @@ const listElements = document.querySelectorAll("li");
 listElements.forEach((listElements) => {
   listElements.classList.add("listItem");
 });
+
+// task 6
+
+header.classList.remove("header");
+
+// task 7
+
+header.remove();
+
+// task 8
+
+function toggleBackgroundColor() {
+  if (body.style.backgroundColor === "") {
+    body.style.backgroundColor = "#123123";
+  } else {
+    body.style.backgroundColor = "";
+  }
+}
+
+const button = document.createElement("button");
+body.append(button);
+button.innerText = "KLIKNIJ MNIE";
+
+button.addEventListener("click", toggleBackgroundColor);
