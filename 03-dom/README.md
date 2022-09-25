@@ -4,8 +4,6 @@ W tym zadaniu przećiwczymy dodawanie elementów do drzewa DOM, odczytywanie ich
 
 ### Zadanie
 
----
-
 0.  Stwórzcie plik HTML na bazie pliku HTML dołączonego do tego projektu (w folderze '03-dom').
     Dodatkowo stwórzcie pusty plik JS i dodajcie go do tego HTMLa. Skrypt dodajcie w znaczniku body.
     Upewnijcie się, że skrypt został poprawnie podpięty - dodajcie 'console.log('DOM API') i odpalcie plik HTML. Stosowny komunikat powinien się pojawić w konsoli.
