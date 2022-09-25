@@ -63,3 +63,36 @@ body.append(button);
 button.innerText = "KLIKNIJ MNIE";
 
 button.addEventListener("click", toggleBackgroundColor);
+
+// task extra
+
+const div = document.createElement("div");
+
+const btnPlus = document.createElement("button");
+btnPlus.innerText = "+";
+const btnMinus = document.createElement("button");
+btnMinus.innerText = "-";
+
+let counter = document.createElement("p");
+counter.innerText = "0";
+body.append(counter);
+
+body.append(div);
+div.append(btnPlus, counter, btnMinus);
+
+let counterValue = 0;
+
+counter.before(btnPlus);
+counter.after(btnMinus);
+
+btnPlus.addEventListener("click", () => {
+  counterValue++;
+  counter.innerText = counterValue;
+});
+
+btnMinus.addEventListener("click", () => {
+  counterValue--;
+  counter.innerText = counterValue;
+});
+
+div.style.display = "flex";
