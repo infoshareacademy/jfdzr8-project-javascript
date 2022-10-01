@@ -1,1 +1,1 @@
-Projekt 3 - [DOM API](./03-dom/README.md)
+Projekt 4 - [Forms, modules, timers](./04-forms-modules-timers/README.md)
