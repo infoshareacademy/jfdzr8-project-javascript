@@ -47,4 +47,5 @@ function domUpdate() {
     h2.style.color = "blue";
     ul.appendChild(h2);
   });
+  localStorage.setItem("value", JSON.stringify(toDo));
 }
